@@ -1,4 +1,4 @@
-package com.example.kcals.ui.theme
+package theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

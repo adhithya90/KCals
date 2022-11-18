@@ -11,9 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.core.R
-
-
-
+import theme.KCalsTheme
 
 
 @Composable
@@ -31,7 +29,10 @@ fun WelcomeScreen(){
 @Preview(showBackground = true)
 @Composable
 fun WelcomeScreenPreview() {
+    KCalsTheme() {
+        WelcomeScreen()
+    }
 
-    WelcomeScreen()
+
 }
 
