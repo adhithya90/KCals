@@ -13,6 +13,9 @@ import androidx.compose.ui.unit.dp
 import com.example.core.R
 
 
+
+
+
 @Composable
 fun WelcomeScreen(){
     Column(modifier = Modifier.fillMaxSize(),
@@ -28,6 +31,7 @@ fun WelcomeScreen(){
 @Preview(showBackground = true)
 @Composable
 fun WelcomeScreenPreview() {
+
     WelcomeScreen()
 }
 

@@ -28,7 +28,7 @@ val Typography = Typography(
     h1 = TextStyle(
         fontFamily = figtree,
         fontWeight = FontWeight.Black,
-        fontSize = 32.sp
+        fontSize = 20.sp
     )
 
     /* Other default text styles to override

@@ -1,3 +1,6 @@
+import ProjectConfig.compileSdk
+
+
 apply {
     from("$rootDir/compose-module.gradle")
 }
