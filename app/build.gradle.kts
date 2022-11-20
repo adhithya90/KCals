@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.resolver.prettyPrint
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -62,6 +64,7 @@ dependencies {
     kapt(DaggerHilt.hiltCompiler)
 
     implementation(project(Modules.core))
+    implementation(project(Modules.core_ui))
     implementation(project(Modules.onboardingPresentation))
     implementation(project(Modules.onboardingDomain))
     implementation(project(Modules.trackerPresentation))

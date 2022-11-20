@@ -11,12 +11,12 @@ import androidx.compose.ui.unit.sp
 // Set of Material typography styles to start with
 
 val figtree = FontFamily(
-    Font(com.example.core.R.font.figtreebold),
-    Font(com.example.core.R.font.figtreeblack),
-    Font(com.example.core.R.font.figreelight),
-    Font(com.example.core.R.font.figtreemedium),
-    Font(com.example.core.R.font.figtreeblack),
-    Font(com.example.core.R.font.figtreeregular)
+    Font(com.example.core_ui.R.font.figtreebold),
+    Font(com.example.core_ui.R.font.figtreeblack),
+    Font(com.example.core_ui.R.font.figreelight),
+    Font(com.example.core_ui.R.font.figtreemedium),
+    Font(com.example.core_ui.R.font.figtreeblack),
+    Font(com.example.core_ui.R.font.figtreeregular)
 )
 
 val Typography = Typography(
