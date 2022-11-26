@@ -8,6 +8,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import com.example.core.R
 import com.example.core.navigation.Route
 import com.example.core.util.UiEvent
@@ -32,18 +34,18 @@ fun WelcomeScreen(
         Spacer(modifier = Modifier.height(spacing.med_spacing))
         ActionButton(text = "Let's get started",
             onClick = {
-                onNavigate(UiEvent.Navigate(Route.VALUE_PROP1))
+                onNavigate(UiEvent.Navigate(Route.AGE))
             })
     }
 }
 
-
+//
 //@Preview(showBackground = true)
 //@Composable
 //fun WelcomeScreenPreview() {
-//    theme() {
-//        WelcomeScreen(UiEvent.Navigate)
-//    }
+//        val navController: NavController
+//        WelcomeScreen(navController = navController.navigate(Route.AGE))
+//
 //
 //
 //}

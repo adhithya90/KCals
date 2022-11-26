@@ -3,18 +3,19 @@ package com.example.kcals
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.core.navigation.Route
+import com.example.core.util.UiEvent
+import com.example.core.util.UiEvent.Navigate
 import com.example.kcals.navigation.navigate
 import com.example.onboarding_presentation.WelcomeScreen
 import theme.KCalsTheme as theme
@@ -81,7 +82,8 @@ class MainActivity : ComponentActivity() {
 //@Preview(showBackground = true)
 //@Composable
 //fun DefaultPreview() {
+//    val navController = rememberNavController()
 //    theme {
-//        WelcomeScreen()
+//        WelcomeScreen(onNavigate = navController::navigate)
 //    }
 //}
